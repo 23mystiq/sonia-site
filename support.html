@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonia Support</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="assets/icon.png" alt="">Sonia</a>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <main class="doc wrap narrow">
+    <h1>Support</h1>
+    <p class="date">Sonia 1.0 · macOS 15 or later · Apple silicon and Intel</p>
+
+    <h2>Get help</h2>
+    <p>Found a bug or have a question? <a href="https://github.com/23mystiq/sonia-app/issues">Open an issue on GitHub</a>.
+    Please include your macOS version, the file format, and what you did just before the problem.</p>
+
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Which audio formats does Sonia play?</summary>
+      <p>MP3, FLAC, WAV, AIFF, AAC (M4A) and Apple Lossless (ALAC). Drop single files, several files, or whole folders
+      onto the window, or use File ▸ Add Files or Folders… (⌘O).</p>
+    </details>
+
+    <details>
+      <summary>Does Sonia change my music files?</summary>
+      <p>Only their tags, and only when you analyse a track or set cue points: Sonia writes the BPM, key and cue points
+      into the file. The audio is never modified. If a tag needs more room than the file has, Sonia rewrites the file
+      safely (with a backup it restores if anything is interrupted), and never while that track is playing.</p>
+    </details>
+
+    <details>
+      <summary>Where are BPM, key and cue points stored?</summary>
+      <p>MP3, WAV and AIFF: in the ID3 tag (TBPM, TKEY, and the "Serato Markers2" cue tag). FLAC: in the Vorbis comments
+      (BPM, INITIALKEY, SERATO_MARKERS_V2). M4A: BPM in the file; key and cue points in Sonia's own library.
+      Sonia also keeps a copy of all analysis results and cue points on your Mac.</p>
+    </details>
+
+    <details>
+      <summary>Camelot or classic key notation?</summary>
+      <p>Camelot (for example 8A) is the default. Choose classic notation (for example Am) in Sonia ▸ Settings.</p>
+    </details>
+
+    <details>
+      <summary>How do I zoom the waveform?</summary>
+      <p>Long-press on the waveform, or pinch with two fingers on the trackpad, to zoom up to 1000%. Double-click to zoom
+      out. Scroll sideways to move around; after a few seconds the view returns to the playhead.</p>
+    </details>
+
+    <details>
+      <summary>What are the keyboard shortcuts?</summary>
+      <p>Space play/pause · ← → previous/next track · ↑ ↓ move through the playlist · Return play the highlighted track ·
+      1–8 set or jump to a cue · A analyse · Delete remove the highlighted cue or the selected tracks.</p>
+    </details>
+
+    <details>
+      <summary>Are my cue points readable by other DJ software?</summary>
+      <p>Sonia stores cue points in the Serato-compatible "Serato Markers2" tag inside the file. Software that reads this
+      tag can pick them up; support varies between apps and versions.</p>
+    </details>
+
+    <details>
+      <summary>My playlist disappeared after restarting.</summary>
+      <p>Sonia remembers the playlist between launches. Tracks whose files were moved, renamed elsewhere or deleted can't be
+      reopened and are skipped; add them again from their new location.</p>
+    </details>
+  </main>
+
+  <footer>
+    <span>© 2026 Lukas Caha</span>
+    <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+  </footer>
+</div>
+</body>
+</html>
